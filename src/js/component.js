@@ -205,13 +205,17 @@ function setHeader(sectionStart, sectionEnd) {
     if (history.state && history.state[0] === 'appView') {
         if (!tabBarEl) {
             const tabs = [{
-                id: 'home-icon',
-                icon: 'home',
-                name: 'Home'
+                id: 'duties-icon',
+                icon: 'duties',
+                name: 'duties'
             }, {
                 id: 'inbox-icon',
                 icon: 'inbox',
                 name: 'Inbox'
+            },{
+                id: 'details-icon',
+                icon: 'details',
+                name: 'details'
             }];
             
             const tabBar = showTabs(tabs, 'navigation-tabs');

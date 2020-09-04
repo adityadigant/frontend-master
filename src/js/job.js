@@ -1089,7 +1089,7 @@ function showAllDuties() {
             if (hasPreviousDuties) {
                 listGroup.appendChild(createElement('h3', {
                     className: 'mdc-list-group__subheader previous--subheader mt-10',
-                    textContent: 'Previous'
+                    textContent: 'Previousssssss'
                 }))
             }
             listGroup.appendChild(dutiesUl)
