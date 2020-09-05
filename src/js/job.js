@@ -1056,9 +1056,9 @@ function showAllDuties() {
             sortedDates.forEach(function (activity) {
 
                 const li = dutyDateList(activity, activeDutyId, hasMultipleOffice);
-
+               
                 if (activeDutyId && activeDutyId === activity.activityId) {
-                    let i=1;
+                    
                     hasCurrentDuty = true
                     activeDuty.isActive = true;
                     function autoshow() {
@@ -1066,11 +1066,8 @@ function showAllDuties() {
                         history.pushState(['jobView', activeDuty], null, null)
                         jobView(activeDuty);
                     }
-                    if(i==1){
-                        autoshow();
-                    }
-                    i++;
-                   
+                    autoshow();
+                
                     
                     li.addEventListener('click', function () {
                         removeSwipe();
@@ -1080,6 +1077,7 @@ function showAllDuties() {
                     activeUl.appendChild(li);
                     console.log('going to start timer')
                 } else {
+                    
                     hasPreviousDuties = true;
                     li.addEventListener('click', function () {
                         history.pushState(['jobView', activity], null, null)
